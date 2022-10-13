@@ -1,0 +1,250 @@
+@import "global.scss";
+@import "tokens.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: $font-size-sm;
+    font-family: $font-family-base;
+}
+
+
+/*-----Mobile-----*/
+
+@media screen and (max-width: 480px) {
+
+    .main-image {
+
+        .main-image-desktop {
+        display: none;
+        }
+
+        .main-image-mobile {
+        width: 100%;
+        }
+    }
+
+    .projetos-title {
+       padding: 24px;
+
+       &__title {
+            font-size: $font-size-lg;
+            color: $color-primary;
+       }
+    }
+
+    .project-01 {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .project--desktop {
+            display: none;
+        }
+
+        .project--mobile {
+            width: 100%;
+        }
+
+        .project--title {
+            font-size: $font-size-lg;
+            color: $color-primary;
+        }
+
+        .project--subtitle {
+            font-size: $font-size-sm;
+            color: $color-tertiary;
+        }
+
+        .project--description {
+            font-size: $font-size-xs;
+            color: $color-secondary;
+        }
+
+        .btn-project {
+            width: 160px;
+            color: white;
+            background-color: $color-tertiary;
+            padding: 16px 24px;
+            border-radius: 4px;
+            font-family: $font-family-base;
+            font-size: $font-size-xs;
+            border: none;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
+    .project-02 {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .project--desktop2 {
+            display: none;
+        }
+
+        .project--mobile2 {
+            width: 100%;
+        }
+
+        .project--title2 {
+            font-size: $font-size-lg;
+            color: $color-primary;
+        }
+
+        .project--subtitle2 {
+            font-size: $font-size-sm;
+            color: $color-tertiary;
+        }
+
+        .project--description2 {
+            font-size: $font-size-xs;
+            color: $color-secondary;
+        }
+
+        .btn-project2 {
+            width: 160px;
+            color: white;
+            background-color: $color-tertiary;
+            padding: 16px 24px;
+            border-radius: 4px;
+            font-family: $font-family-base;
+            font-size: $font-size-xs;
+            border: none;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    
+    }
+
+}
+
+
+
+/*-----Desktop-----*/
+
+@media screen and (min-width: 481px) {
+    
+
+    .main-image {
+
+        .main-image-desktop {
+            width: 100%;
+        }
+
+        .main-image-mobile {
+            display: none;
+        }
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .projetos-title {
+       padding: 24px;
+       text-align: center;
+
+       &__title {
+            font-size: $font-size-lg;
+            color: $color-primary;
+       }
+    }
+
+    .project-01 {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .project--desktop {}
+
+        .project--mobile {
+            display: none;
+        }
+
+        .project--title {
+            font-size: $font-size-lg;
+            color: $color-primary;
+        }
+
+        .project--subtitle {
+            font-size: $font-size-sm;
+            color: $color-tertiary;
+        }
+
+        .project--description {
+            font-size: $font-size-xs;
+            color: $color-secondary;
+        }
+
+        .btn-project {
+            width: 160px;
+            color: white;
+            background-color: $color-tertiary;
+            padding: 16px 24px;
+            border-radius: 4px;
+            font-family: $font-family-base;
+            font-size: $font-size-xs;
+            border: none;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
+    .project-02 {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .project--desktop2 {}
+
+        .project-mobile2 {
+            display: none;
+        }
+
+        .project--title2 {
+            font-size: $font-size-lg;
+            color: $color-primary;
+        }
+
+        .project--subtitle2 {
+            font-size: $font-size-sm;
+            color: $color-tertiary;
+        }
+
+        .project--description2 {
+            font-size: $font-size-xs;
+            color: $color-secondary;
+        }
+
+        .btn-project2 {
+            width: 160px;
+            color: white;
+            background-color: $color-tertiary;
+            padding: 16px 24px;
+            border-radius: 4px;
+            font-family: $font-family-base;
+            font-size: $font-size-xs;
+            border: none;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    
+    }
+
+}

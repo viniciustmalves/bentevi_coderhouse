@@ -1,0 +1,137 @@
+@import "tokens.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: $font-size-sm;
+    font-family: $font-family-base;
+}
+
+/* ------ Mobile ------ */
+
+@media screen and (max-width: 768px) {
+
+    .menu {
+        background-color: #ffffff;
+
+        &__wrapper {
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 16px 96px;
+            border-bottom: solid 1px #E6E3DC;
+            justify-content: center;
+        }
+
+        &__logo {
+            height: 40px;
+        }
+
+        &__navbar {
+            display: none;
+        }
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #FDFDFB;
+
+        &__content {
+            text-align: center;
+            width: 100%;
+            font-size: $font-size-xxs;
+            color: $color-secondary;
+            padding: 24px;
+        }
+    }
+    
+}
+
+
+
+/* ------ Desktop ------ */
+
+@media screen and (min-width: 768px) {
+
+    .menu {
+            background-color: blue;
+
+
+            &__wrapper {
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 16px 96px;
+                border-bottom: solid 1px #E6E3DC;
+                justify-content: space-between;
+            }
+
+            &__logo {
+                height: 48px;
+            }
+
+            &__navbar {
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+               gap: 24px;
+            }
+
+            &__item {
+                text-decoration: none;
+                font-size: $font-size-xs;
+                color: $color-primary;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: $color-tertiary;
+                }
+            }
+
+            &__btn-contato {
+                color: white;
+                background-color: #8C907A;
+                padding: 16px 24px;
+                border: #8C907A 2px solid;
+                border-radius: 6px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 14px;
+                text-decoration: none;
+
+                &:hover {
+                background-color: #6D725A;
+                color: white;
+                border: #6D725A 2px solid;
+                box-sizing: border-box; 
+                cursor: pointer;       
+                }
+            }
+
+        }
+
+        .footer {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #FDFDFB;
+
+            &__content {
+                text-align: center;
+                width: 100%;
+                font-size: $font-size-xxs;
+                color: $color-secondary;
+                padding: 24px;
+            }
+        }
+
+    }

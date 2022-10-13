@@ -1,0 +1,253 @@
+/* Colors */
+/* Font-Size */
+/* Font-Family */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Montserrat"; }
+
+/* ------ Mobile ------ */
+@media screen and (max-width: 768px) {
+  .menu {
+    background-color: #ffffff; }
+    .menu__wrapper {
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 16px 96px;
+      border-bottom: solid 1px #E6E3DC;
+      justify-content: center; }
+    .menu__logo {
+      height: 40px; }
+    .menu__navbar {
+      display: none; }
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDFDFB; }
+    .footer__content {
+      text-align: center;
+      width: 100%;
+      font-size: 12px;
+      color: #baa496;
+      padding: 24px; } }
+
+/* ------ Desktop ------ */
+@media screen and (min-width: 768px) {
+  .menu {
+    background-color: blue; }
+    .menu__wrapper {
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 16px 96px;
+      border-bottom: solid 1px #E6E3DC;
+      justify-content: space-between; }
+    .menu__logo {
+      height: 48px; }
+    .menu__navbar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 24px; }
+    .menu__item {
+      text-decoration: none;
+      font-size: 14px;
+      color: #564a49; }
+      .menu__item:hover {
+        text-decoration: underline;
+        color: #8c907a; }
+    .menu__btn-contato {
+      color: white;
+      background-color: #8C907A;
+      padding: 16px 24px;
+      border: #8C907A 2px solid;
+      border-radius: 6px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none; }
+      .menu__btn-contato:hover {
+        background-color: #6D725A;
+        color: white;
+        border: #6D725A 2px solid;
+        box-sizing: border-box;
+        cursor: pointer; }
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDFDFB; }
+    .footer__content {
+      text-align: center;
+      width: 100%;
+      font-size: 12px;
+      color: #baa496;
+      padding: 24px; } }
+
+/* Colors */
+/* Font-Size */
+/* Font-Family */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Montserrat"; }
+
+/*-----Mobile-----*/
+@media screen and (max-width: 480px) {
+  .main-image .main-image-desktop {
+    display: none; }
+  .main-image .main-image-mobile {
+    width: 100%; }
+  .projetos-title {
+    padding: 24px; }
+    .projetos-title__title {
+      font-size: 32px;
+      color: #564a49; }
+  .project-01 {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; }
+    .project-01 .project--desktop {
+      display: none; }
+    .project-01 .project--mobile {
+      width: 100%; }
+    .project-01 .project--title {
+      font-size: 32px;
+      color: #564a49; }
+    .project-01 .project--subtitle {
+      font-size: 16px;
+      color: #8c907a; }
+    .project-01 .project--description {
+      font-size: 14px;
+      color: #baa496; }
+    .project-01 .btn-project {
+      width: 160px;
+      color: white;
+      background-color: #8c907a;
+      padding: 16px 24px;
+      border-radius: 4px;
+      font-family: "Montserrat";
+      font-size: 14px;
+      border: none;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+  .project-02 {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; }
+    .project-02 .project--desktop2 {
+      display: none; }
+    .project-02 .project--mobile2 {
+      width: 100%; }
+    .project-02 .project--title2 {
+      font-size: 32px;
+      color: #564a49; }
+    .project-02 .project--subtitle2 {
+      font-size: 16px;
+      color: #8c907a; }
+    .project-02 .project--description2 {
+      font-size: 14px;
+      color: #baa496; }
+    .project-02 .btn-project2 {
+      width: 160px;
+      color: white;
+      background-color: #8c907a;
+      padding: 16px 24px;
+      border-radius: 4px;
+      font-family: "Montserrat";
+      font-size: 14px;
+      border: none;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; } }
+
+/*-----Desktop-----*/
+@media screen and (min-width: 481px) {
+  .main-image .main-image-desktop {
+    width: 100%; }
+  .main-image .main-image-mobile {
+    display: none; }
+  .projects-container {
+    display: flex;
+    flex-direction: row; }
+  .projetos-title {
+    padding: 24px;
+    text-align: center; }
+    .projetos-title__title {
+      font-size: 32px;
+      color: #564a49; }
+  .project-01 {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; }
+    .project-01 .project--mobile {
+      display: none; }
+    .project-01 .project--title {
+      font-size: 32px;
+      color: #564a49; }
+    .project-01 .project--subtitle {
+      font-size: 16px;
+      color: #8c907a; }
+    .project-01 .project--description {
+      font-size: 14px;
+      color: #baa496; }
+    .project-01 .btn-project {
+      width: 160px;
+      color: white;
+      background-color: #8c907a;
+      padding: 16px 24px;
+      border-radius: 4px;
+      font-family: "Montserrat";
+      font-size: 14px;
+      border: none;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+  .project-02 {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; }
+    .project-02 .project-mobile2 {
+      display: none; }
+    .project-02 .project--title2 {
+      font-size: 32px;
+      color: #564a49; }
+    .project-02 .project--subtitle2 {
+      font-size: 16px;
+      color: #8c907a; }
+    .project-02 .project--description2 {
+      font-size: 14px;
+      color: #baa496; }
+    .project-02 .btn-project2 {
+      width: 160px;
+      color: white;
+      background-color: #8c907a;
+      padding: 16px 24px;
+      border-radius: 4px;
+      font-family: "Montserrat";
+      font-size: 14px;
+      border: none;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; } }

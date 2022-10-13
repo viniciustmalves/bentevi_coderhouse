@@ -1,0 +1,189 @@
+@import "global.scss";
+@import "tokens.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: $font-size-sm;
+    font-family: $font-family-base;
+}
+
+
+/*-----Mobile-----*/
+
+@media screen and (max-width: 480px) {
+
+    .main--image__desktop {
+        display: none;
+    }
+
+    .main--image__mobile {
+        width: 100%;
+    }
+
+    .quem-somos--title {
+        padding: 24px;
+
+        &__title {
+            font-size: $font-size-lg;
+            color: $color-primary;
+        }
+    }
+
+    .arq1--image {
+        width: 100vw;
+        padding: 0 24px 24px;
+        border-radius: 8px;
+    }
+
+    .arq1--content {
+        padding: 0px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 40px;
+
+        .arq1--name {
+            font-size: $font-size-md;
+            color: $color-primary;
+        }
+
+        .arq1-role {
+            font-size: $font-size-sm;
+            color: $color-tertiary;
+        }
+
+        .arq1-description {
+            font-size: $font-size-xs;
+            color: $color-secondary;
+        }
+    }
+
+    .arq2--image {
+        width: 100vw;
+        padding: 0 24px 24px;
+        border-radius: 8px;
+    }
+
+    .arq2--content {
+        padding: 0px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 40px;
+
+        .arq2--name {
+            font-size: $font-size-md;
+            color: $color-primary;
+        }
+
+        .arq2-role {
+            font-size: $font-size-sm;
+            color: $color-tertiary;
+        }
+
+        .arq2-description {
+            font-size: $font-size-xs;
+            color: $color-secondary;
+        }
+    }
+
+}
+
+
+
+/*-----Desktop-----*/
+
+@media screen and (min-width: 481px) {
+
+    .main--image__desktop {
+        width: 100%;
+    }
+
+    .main--image__mobile {
+        display: none;
+    }
+
+    .quem-somos--title {
+        padding: 24px;
+
+        &__title {
+            font-size: $font-size-lg;
+            color: $color-primary;
+            text-align: center;
+        }
+    }
+
+    
+    .arq1--container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 0 96px;
+        margin-bottom: 80px;
+
+        .arq1--image {
+            border-radius: 8px;
+        }
+    
+        .arq1--content {
+            padding: 0px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 40px;
+    
+            .arq1--name {
+                font-size: $font-size-lg;
+                color: $color-primary;
+            }
+    
+            .arq1-role {
+                font-size: $font-size-sm;
+                color: $color-tertiary;
+            }
+    
+            .arq1-description {
+                font-size: $font-size-xs;
+                color: $color-secondary;
+            }
+        }
+
+    }
+    
+    .arq2--container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 96px;
+
+        .arq2--image {
+            border-radius: 8px;
+        }
+
+        .arq2--content {
+            padding: 0px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .arq2--name {
+                font-size: $font-size-lg;
+                color: $color-primary;
+            }
+
+            .arq2-role {
+                font-size: $font-size-sm;
+                color: $color-tertiary;
+            }
+
+            .arq2-description {
+                font-size: $font-size-xs;
+                color: $color-secondary;
+            }
+        }    
+
+    }
+
+}
