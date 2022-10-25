@@ -9,33 +9,10 @@
     font-family: $font-family-base;
 }
 
-#projetos {
-    background-color: blue;
-    display: flex;
-    justify-content: center;
+.title {
+    font-weight: 900;
 }
 
-.container-projetos {
-    width: 1440px;
-    background-color: azure;
-    display: flex;
-    justify-content: center;
-
-    .container {
-        width: 100%;
-        background-color: gainsboro;
-        padding: 96px;
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-
-        &__title {
-            font-size: $font-size-lg;
-        }
-
-        &__subtitle {
-            font-size: $font-size-xs;
-            font-weight: 400;
-        }
-    }
+.btn .btn-primary {
+    background-color: red;
 }

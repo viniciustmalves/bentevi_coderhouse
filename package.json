@@ -13,5 +13,10 @@
   "devDependencies": {
     "node-sass": "^7.0.3",
     "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "jquery": "^3.6.1",
+    "popper.js": "^1.16.1"
   }
 }
